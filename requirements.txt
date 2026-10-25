@@ -1,0 +1,52 @@
+# =============================================================================
+# SentinelFlow: Real-Time Detection and Automated Containment of
+# Suspicious Account Activity Using Python-Based SIEM Workflows
+#
+# IBM SkillsBuild Cyber Security 2026 — BharatCares
+# Author: Riddhi Patel
+#
+# requirements.txt — Direct project dependencies (Python 3.13.7, Windows 10 x64)
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# Recommended: use a virtual environment first:
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1        (Windows PowerShell)
+#   pip install -r requirements.txt
+# =============================================================================
+
+# --- Data processing ----------------------------------------------------------
+numpy==2.4.0
+pandas==2.3.3
+scipy==1.16.3
+
+# --- Machine learning ---------------------------------------------------------
+scikit-learn==1.8.0
+
+# --- Visualisation ------------------------------------------------------------
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- Notebook execution -------------------------------------------------------
+notebook==7.6.3
+nbformat==5.11.1
+nbconvert==7.17.2
+nbclient==0.11.0
+ipykernel==7.1.0
+jinja2==3.1.6
+
+# --- Report generation --------------------------------------------------------
+python-docx==1.2.0
+
+# --- Utilities ----------------------------------------------------------------
+requests==2.32.5
+tabulate==0.10.0
+colorama==0.4.6
+
+# --- Testing ------------------------------------------------------------------
+pytest==9.1.1
+
+# --- Optional integrations (disabled when env vars are absent) ----------------
+# python-dotenv   — load .env for SHUFFLE_WEBHOOK_URL / ABUSEIPDB_KEY
+# No Wazuh or Shuffle packages are required; integrations are HTTP-based.
